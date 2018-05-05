@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Web", "Blog.Web\Blog.Web.csproj", "{CA350410-A03A-4486-9973-1DDF35FC9C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Web.Tests", "Blog.Web.Tests\Blog.Web.Tests.csproj", "{396F299A-046F-4FEC-B119-D0C5BD80B5D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{1306B12B-FD6B-4620-A069-A12E9428E93B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7FAFD738-6942-4512-9C27-484903D10035}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{12ADE3D1-7B82-46C5-94C0-9DB4E03F888B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{D9268B0E-07C8-4034-9E4B-EDCFD57A0F38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Angular", "Blog.Angular\Blog.Angular.csproj", "{5FFE0B83-8BAB-4AF1-9C00-89F71EF752A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA350410-A03A-4486-9973-1DDF35FC9C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA350410-A03A-4486-9973-1DDF35FC9C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA350410-A03A-4486-9973-1DDF35FC9C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA350410-A03A-4486-9973-1DDF35FC9C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{396F299A-046F-4FEC-B119-D0C5BD80B5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{396F299A-046F-4FEC-B119-D0C5BD80B5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{396F299A-046F-4FEC-B119-D0C5BD80B5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{396F299A-046F-4FEC-B119-D0C5BD80B5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFE0B83-8BAB-4AF1-9C00-89F71EF752A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFE0B83-8BAB-4AF1-9C00-89F71EF752A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA350410-A03A-4486-9973-1DDF35FC9C86} = {1306B12B-FD6B-4620-A069-A12E9428E93B}
+		{396F299A-046F-4FEC-B119-D0C5BD80B5D7} = {7FAFD738-6942-4512-9C27-484903D10035}
+		{5FFE0B83-8BAB-4AF1-9C00-89F71EF752A6} = {1306B12B-FD6B-4620-A069-A12E9428E93B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7ABCD375-C7CB-457E-A9BE-072162437C4B}
+	EndGlobalSection
+EndGlobal
