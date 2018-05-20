@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+/*$mdc-theme-primary: #3267AD;
+$mdc-theme-secondary: #AD6B4E;*/
+
+$mdc-theme-primary: #3267AD;
+$mdc-theme-on-primary: #33333D;
+$mdc-theme-secondary: #AD6B4E;
+$mdc-theme-on-secondary: #FFFFFF;
+$mdc-theme-surface: #33333D;
+$mdc-theme-on-surface: #FFFFFF;
+$mdc-theme-background: #33333D;
+$mdc-theme-on-background: #FFFFFF;
+
+html, body {
+  height: 100%;
+}
+
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding-top: 0.1px;
+  background-color: $mdc-theme-background;
+  color: $mdc-theme-on-background;
+}
+
+@import "~@angular-mdc/theme/material";
+
+
+.demo-drawer--custom {
+  @include mdc-drawer-ink-color(#fff);
+  
+}
+
+.mdc-list-item {
+  @include mdc-list-item-primary-text-ink-color(on-surface);
+  @include mdc-list-item-graphic-ink-color(on-surface)
+}
+
+.demo-content__drawer {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+
+  &--row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--temporary {
+    position: relative;
+    height: 55vh;
+  }
+
+  &--persistent {
+    display: flex;
+    height: 55vh;
+
+    .mdc-drawer--persistent:not(.mdc-drawer--open) {
+      display: none;
+    }
+  }
+}
+
+
+// Home page styles
+
+.home {
+  display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+}
+
+.shrine-body {
+  display: block;
+  overflow: auto;
+}

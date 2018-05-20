@@ -23,14 +23,40 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/app.component.css":
-/*!***********************************!*\
-  !*** ./src/app/app.component.css ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = ".main-container {\n  display: flex;\n  flex-direction: column;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n\n.example-is-mobile .main-sidenav-container {\n  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the\n       `<body>` to be our scrolling element for mobile layouts. */\n  flex: 1 0 auto;\n}\n"
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var routes = [];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
 
 /***/ }),
 
@@ -41,7 +67,18 @@ module.exports = ".main-container {\n  display: flex;\n  flex-direction: column;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-container\">\r\n  <mat-toolbar>\r\n    <button mat-icon-button (click)=\"snav.toggle()\">\r\n      <mat-icon>menu</mat-icon>\r\n    </button>\r\n    <span>My Application</span>\r\n  </mat-toolbar>\r\n  <mat-sidenav-container>\r\n    <mat-sidenav #snav mode=\"mobileQuery.matches ? 'over' : 'side'\" fixedInViewport=\"mobileQuery.matches\" fixedTopGap=\"100\">\r\n      <mat-nav-list>\r\n        <mat-list-item><mat-icon>home</mat-icon> Home</mat-list-item>\r\n      </mat-nav-list>\r\n    </mat-sidenav>\r\n    <mat-sidenav-content class=\"main-sidenav-content\">\r\n      Testing\r\n    </mat-sidenav-content>\r\n  </mat-sidenav-container>\r\n</div>  \r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<mdc-drawer drawer='permanent'>\r\n  <mdc-drawer-spacer></mdc-drawer-spacer>\r\n  <mdc-drawer-content>\r\n    <mdc-list-group>\r\n      <mdc-list>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>home</mdc-icon>Home\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>star</mdc-icon>Star\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>send</mdc-icon>Sent Mail\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>drafts</mdc-icon>Drafts\r\n        </mdc-list-item>\r\n        <mdc-list-divider></mdc-list-divider>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>email</mdc-icon>All Mail\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>delete</mdc-icon>Trash\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>report</mdc-icon>Spam\r\n        </mdc-list-item>\r\n      </mdc-list>\r\n    </mdc-list-group>\r\n  </mdc-drawer-content>\r\n</mdc-drawer>\r\n<div class=\"demo-content__drawer--column\">\r\n  <mdc-toolbar>\r\n    <mdc-toolbar-row>\r\n      <mdc-toolbar-section [alignStart]=\"true\">\r\n        <mdc-toolbar-title>App Layout</mdc-toolbar-title>\r\n      </mdc-toolbar-section>\r\n      <mdc-toolbar-section [alignEnd]=\"true\" [shrinkToFit]=\"true\">\r\n        <a href=\"#/drawer-demo\" mdcRipple mdc-toolbar-icon material-icon>file_download</a>\r\n        <a href=\"#/drawer-demo\" mdcRipple mdc-toolbar-icon material-icon>print</a>\r\n        <a href=\"#/drawer-demo\" mdcRipple mdc-toolbar-icon material-icon>more_vert</a>\r\n      </mdc-toolbar-section>\r\n    </mdc-toolbar-row>\r\n  </mdc-toolbar>\r\n\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/app.component.scss":
+/*!************************************!*\
+  !*** ./src/app/app.component.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -71,7 +108,7 @@ var AppComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+            styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         })
     ], AppComponent);
     return AppComponent;
@@ -93,9 +130,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular-mdc/web */ "./node_modules/@angular-mdc/web/esm5/web.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -113,20 +150,38 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]
             ],
             imports: [
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcButtonModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcCardModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcCheckboxModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcDialogModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcDrawerModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcElevationModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcFabModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcFormFieldModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcIconModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcIconToggleModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcLinearProgressModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcListModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcMenuModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcRadioModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcRippleModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcSelectModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcSliderModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcSnackbarModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcSwitchModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcTabModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcTextFieldModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcThemeModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcToolbarModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcTypographyModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatToolbarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatIconModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSidenavModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatListModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatMenuModule"]
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
