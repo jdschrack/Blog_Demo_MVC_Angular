@@ -67,7 +67,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<mdc-drawer drawer='permanent'>\r\n  <mdc-drawer-spacer></mdc-drawer-spacer>\r\n  <mdc-drawer-content>\r\n    <mdc-list-group>\r\n      <mdc-list>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>home</mdc-icon>Home\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>star</mdc-icon>Star\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>send</mdc-icon>Sent Mail\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>drafts</mdc-icon>Drafts\r\n        </mdc-list-item>\r\n        <mdc-list-divider></mdc-list-divider>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>email</mdc-icon>All Mail\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>delete</mdc-icon>Trash\r\n        </mdc-list-item>\r\n        <mdc-list-item>\r\n          <mdc-icon mdc-list-item-graphic>report</mdc-icon>Spam\r\n        </mdc-list-item>\r\n      </mdc-list>\r\n    </mdc-list-group>\r\n  </mdc-drawer-content>\r\n</mdc-drawer>\r\n<div class=\"demo-content__drawer--column\">\r\n  <mdc-toolbar>\r\n    <mdc-toolbar-row>\r\n      <mdc-toolbar-section [alignStart]=\"true\">\r\n        <mdc-toolbar-title>App Layout</mdc-toolbar-title>\r\n      </mdc-toolbar-section>\r\n      <mdc-toolbar-section [alignEnd]=\"true\" [shrinkToFit]=\"true\">\r\n        <a href=\"#/drawer-demo\" mdcRipple mdc-toolbar-icon material-icon>file_download</a>\r\n        <a href=\"#/drawer-demo\" mdcRipple mdc-toolbar-icon material-icon>print</a>\r\n        <a href=\"#/drawer-demo\" mdcRipple mdc-toolbar-icon material-icon>more_vert</a>\r\n      </mdc-toolbar-section>\r\n    </mdc-toolbar-row>\r\n  </mdc-toolbar>\r\n\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
+module.exports = "<div class=\"home\">\r\n  <mdc-drawer drawer=\"permanent\" fixed=\"false\">\r\n    <mdc-drawer-header>\r\n      <mdc-drawer-header-content>\r\n        <h1 class=\"headline-title\" mdcHeadline6>Jeremey Schrack</h1>\r\n      </mdc-drawer-header-content>\r\n    </mdc-drawer-header>\r\n    <mdc-drawer-content>\r\n      <mdc-list-group>\r\n        <mdc-list>\r\n          <mdc-list-item>\r\n            <mdc-icon mdc-list-item-graphic>home</mdc-icon>Home\r\n          </mdc-list-item>\r\n        </mdc-list>\r\n      </mdc-list-group>\r\n    </mdc-drawer-content>\r\n  </mdc-drawer>\r\n  <div class=\"content-body\">\r\n    <p mdcHeadline5>Hello World</p>\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -78,7 +78,7 @@ module.exports = "<!--The content below is only a placeholder and can be replace
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".headline-title {\n  -ms-grid-row-align: center;\n      align-self: center;\n  margin: 5px auto; }\n\n.headline-logo {\n  height: 90%;\n  padding: 40px 0 0;\n  margin: 0 auto; }\n"
 
 /***/ }),
 
@@ -132,7 +132,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular-mdc/web */ "./node_modules/@angular-mdc/web/esm5/web.es5.js");
+/* harmony import */ var _material_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./material.module */ "./src/app/material.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -153,30 +153,7 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]
             ],
             imports: [
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcButtonModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcCardModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcCheckboxModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcDialogModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcDrawerModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcElevationModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcFabModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcFormFieldModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcIconModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcIconToggleModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcLinearProgressModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcListModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcMenuModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcRadioModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcRippleModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcSelectModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcSliderModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcSnackbarModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcSwitchModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcTabModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcTextFieldModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcThemeModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcToolbarModule"],
-                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_4__["MdcTypographyModule"],
+                _material_module__WEBPACK_IMPORTED_MODULE_4__["MaterialModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]
             ],
@@ -185,6 +162,66 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/material.module.ts":
+/*!************************************!*\
+  !*** ./src/app/material.module.ts ***!
+  \************************************/
+/*! exports provided: MaterialModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialModule", function() { return MaterialModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular-mdc/web */ "./node_modules/@angular-mdc/web/esm5/web.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var MaterialModule = /** @class */ (function () {
+    function MaterialModule() {
+    }
+    MaterialModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            exports: [
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcButtonModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcCardModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcCheckboxModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcDialogModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcDrawerModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcElevationModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcFabModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcFormFieldModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcIconModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcIconToggleModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcLinearProgressModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcListModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcMenuModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcRadioModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcRippleModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcSelectModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcSliderModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcSnackbarModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcSwitchModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcTabModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcTextFieldModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcThemeModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcToolbarModule"],
+                _angular_mdc_web__WEBPACK_IMPORTED_MODULE_1__["MdcTypographyModule"]
+            ]
+        })
+    ], MaterialModule);
+    return MaterialModule;
 }());
 
 
